@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover"
+    />
+
+    <title>我的简历</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        /* background: red; */
+        background: #eee;
+        margin: 20px 0;
+      }
+
+      article {
+        width: 21cm;
+        min-height: 29.7cm;
+        background: white;
+        margin: 0 auto;
+        overflow: auto;
+        padding: 1em 2em;
+      }
+    </style>
+    <style media="print">
+      body {
+        margin: 0;
+      }
+      .page2 {
+        page-break-before: always;
+        margin-top: 30px;
+      }
+    </style>
+    <style>
+      h1 {
+        font-size: 25px;
+        margin-top: 0;
+      }
+      h4,
+      h5,
+      h6 {
+        font-size: normal;
+      }
+      p {
+        margin: 0.3em 0;
+        line-height: 1.5em;
+      }
+      p,
+      li {
+        color: #666;
+      }
+      p strong {
+        color: #f60;
+      }
+      li strong {
+        color: #f60;
+      }
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin: 0;
+      }
+      ol,
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      a {
+        color: #999;
+        text-decoration: none;
+        border-bottom: 1px solid;
+      }
+      .click {
+        margin-top: 3px;
+      }
+      .bio {
+        position: relative;
+      }
+
+      .bio img {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      .bio {
+        position: relative;
+      }
+      .bio img {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      .tel,
+      .email {
+        color: #666;
+        border-bottom: none;
+      }
+    </style>
+    <style>
+      @media (max-width: 500px) {
+        body {
+          margin: 0;
+        }
+        article {
+          width: auto;
+          height: auto;
+        }
+
+        .bio img {
+          display: none;
+        }
+
+        .skills .wrapper {
+          flex-direction: column;
+        }
+
+        #skills {
+          width: auto;
+        }
+        .jobs header {
+          flex-direction: column;
+        }
+        .jobs header > h3,
+        .jobs header > h4,
+        .jobs header > span {
+          margin: 0;
+        }
+      }
+    </style>
+    <style>
+      .projects p {
+        color: #666;
+      }
+
+      .projects > ol {
+        margin-top: 0;
+        padding: 0;
+      }
+      .projects > ol > li {
+        margin-bottom: 24px;
+      }
+      .projects > ol li header {
+        display: flex;
+        justify-content: space-between;
+      }
+      .projects > ol > li > header > h3 {
+        display: inline-block;
+      }
+    </style>
+    <style>
+      .openSource header img {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      .openSource > ul > li {
+        margin-bottom: 24px;
+      }
+
+      .openSource header {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
+    <style>
+      .jobs > ol > li {
+        margin: 12px 0;
+      }
+
+      .jobs header {
+        display: flex;
+        color: #666;
+        margin-bottom: 12px;
+      }
+
+      .jobs header > h3 {
+        font-size: 18px;
+        color: #333;
+      }
+
+      .jobs header > h4 {
+        margin-left: 1em;
+        font-size: 18px;
+      }
+
+      .jobs header > span {
+        font-size: 18px;
+        margin-left: auto;
+      }
+    </style>
+    <style>
+      #skills {
+        width: 500px;
+        height: 260px;
+      }
+      @media print {
+        #skills {
+          display: none;
+        }
+      }
+
+      .wrapper {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .skills .wrapper :second-child {
+        margin-left: 0px;
+      }
+
+      .skills .wrapper ul {
+        color: #666;
+      }
+
+      .wrapper strong {
+        color: #f60;
+      }
+
+      .skills .wrapper ul li {
+        line-height: 1.2;
+        margin-bottom: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <section class="bio">
+        <h1 class="">付玉</h1>
+        <img src="images/photo.jpg" alt="付玉" height="105" />
+        <p>
+          24岁 &nbsp;&nbsp;| &nbsp;&nbsp;前端开发工程师 &nbsp;&nbsp;|
+          &nbsp;&nbsp;北京 &nbsp;&nbsp;| &nbsp;&nbsp;硕士
+        </p>
+        <p>
+          手机：<a class="tel" href="tel:17866565640">17866565640</a>
+          &nbsp;&nbsp;|&nbsp;&nbsp; 微信号：Jonie-Fu &nbsp;&nbsp;|&nbsp;&nbsp;
+          邮箱：<a class="email" href="mailto:914198430@qq.com"
+            >joniefu@foxmail.com</a
+          >
+        </p>
+      </section>
+      <style>
+        .education ul li::before {
+          content: "👍";
+        }
+      </style>
+      <section class="education">
+        <h2>教育经历</h2>
+        <p>
+          <span><time>2013年</time>~<time>2017年</time></span>
+          大连民族大学 电子信息技术 本科
+        </p>
+        <ul>
+          <li>荣誉：大连民族大学"优秀团干部"；大连民族大学"三好学生"</li>
+        </ul>
+        <p>
+          <span><time>2017年</time>~<time>2020年</time></span>
+          大连民族大学 计算机技术 硕士
+        </p>
+        <ul>
+          <li>
+            荣誉：新浪微热点第一届传播数据挖掘竞赛三等奖；大连民族大学学业二等奖学金
+          </li>
+        </ul>
+      </section>
+      <section class="skills">
+        <h2>技能</h2>
+        <div class="wrapper">
+          <div>
+            <ul>
+              <li>熟练掌握页面制作技巧，能将设计稿<strong>完美还原</strong></li>
+              <li>
+                熟练掌握<strong>Javascript</strong>，掌握原型链、<strong>闭包</strong>、事件委托等重要概念
+              </li>
+              <li>熟练掌握<strong>Python</strong></li>
+              <li>
+                熟悉 <strong>Vue全家桶</strong>的使用，包括
+                VueCli、VueRouter、Vuex 等
+              </li>
+              <li>
+                熟悉<strong>前后端分离</strong>技术，包括
+                AJAX、跨域、前端路由、Cookie、Session 等
+              </li>
+              <li>
+                熟悉<strong>React全家桶</strong>的使用，包括
+                create-react-app、ReactRouter、Redux 等
+              </li>
+              <li>熟悉 ES6语法，包括 let / Promsise / await / 析构赋值</li>
+              <li>熟悉<strong>Echarts</strong>图表库的使用</li>
+              <li>
+                了解 <strong>TypeScript</strong> 的使用，我的项目就是 TS 实现的
+              </li>
+              <li>了解 <strong>Webpack 的配置和优化</strong></li>
+            </ul>
+          </div>
+          <div id="skills"></div>
+        </div>
+      </section>
+      <style>
+        .projects ol li {
+          position: relative;
+        }
+        .projects ol li:nth-child(1) .img1 {
+          position: absolute;
+          top: 0px;
+          right: 11px;
+        }
+        .projects ol li:nth-child(3) .img2 {
+          position: absolute;
+          top: 0px;
+          right: 11px;
+        }
+      </style>
+      <section class="projects">
+        <h2>项目经历</h2>
+        <ol>
+          <li>
+            <div class="img1"><img src="images/随心记账.png" alt="" /></div>
+            <header>
+              <h3>随心记账</h3>
+            </header>
+            <div class="click">
+              <a href="https://github.com/JonieFu/morney">Github源码链接</a>
+              <a href="http://joniefu.gitee.io/complete-morney/">项目预览</a>
+            </div>
+            <p>
+              一款基于<strong>Vue</strong>、<strong>VueRouter</strong>、<strong>Vuex</strong>、<strong>TypeScript</strong>的单页面应用。
+            </p>
+            <p>
+              源代码几乎全用TypeScript实现，用到了<strong>装饰器语法</strong>。
+            </p>
+            <p>
+              这是从我自己的需求出发，设计出的极简的记账应用，特点是快速记账。
+            </p>
+            <p>
+              难点在于本人独立设计及实现，期间遇到很多webpack和TypeScript方面的问题。
+            </p>
+            <p>
+              通过查阅资料和不断尝试解决了相关问题，并将解决方法记录在本人的博客。
+            </p>
+          </li>
+          <li>
+            <header><h3>Canvas画板</h3></header>
+            <div class="click">
+              <a href="https://github.com/JonieFu/canvas">Github源码地址</a>
+              <a href="http://joniefu.gitee.io/canvas/">项目预览</a>
+            </div>
+            <p>
+              为了加深对<strong>Canvas API</strong>
+              的理解，自己设计并完成了基于canvas的简易画板。
+            </p>
+            <p>
+              功能包含画笔选色、橡皮擦、撤销和反撤销、下载图片。
+            </p>
+            <p>
+              难点在于当鼠标移动过快，浏览器无法跟上绘画速度产生间隙；画弧线时出现明显的锯齿。
+            </p>
+            <p>
+              lineTo绘制路径和lineJoin设置线段相连部分的属性，保证画笔快速移动时线条的连贯性。
+            </p>
+          </li>
+          <li>
+            <div class="img2"><img src="images/前端导航.png" alt="" /></div>
+            <header class="page2"><h3>前端导航</h3></header>
+            <div class="click">
+              <a href="https://github.com/JonieFu/nav/tree/master/src"
+                >Github源码链接</a
+              >
+              <a href="http://joniefu.gitee.io/nav/src/">项目预览</a>
+            </div>
+            <p>
+              这是一款基于<strong>jQuery</strong>的前端导航项目。
+            </p>
+            <p>
+              使用jQuery、<strong>JS</strong>、<strong>HTML</strong>、<strong>CSS</strong>、<strong>SVG</strong>制作导航页面。
+            </p>
+            <p>用localStorage将数据保存到本地。</p>
+            <p>支持PC端和手机端，手机端长按已存标签删除。</p>
+          </li>
+        </ol>
+      </section>
+      <style>
+        .openSource ul li {
+          position: relative;
+        }
+        .openSource ul li:nth-child(2) .img3 {
+          position: absolute;
+          top: 0px;
+          right: 11px;
+        }
+      </style>
+
+      <section class="openSource">
+        <h2>开源项目</h2>
+        <ul>
+          <li>
+            <header>
+              <h3>封装DOM库</h3>
+            </header>
+            <div class="click">
+              <a href="https://github.com/JonieFu/DOM-Library"
+                >Github源码地址</a
+              >
+            </div>
+            <p>
+              实现了元素增、删、改、查等常见功能。
+            </p>
+          </li>
+          <li>
+            <header><h3>会动的维尼</h3></header>
+            <div class="img3"><img src="images/会动的Winnie.png" alt="" /></div>
+            <div class="click">
+              <a href="https://github.com/JonieFu/Winnie">Github源码链接</a>
+              <a href="https://joniefu.github.io/Winnie/src/">项目预览</a>
+            </div>
+            <p>
+              在学习了CSS3布局与定位、JS DOM操作后，具备一定的网页模仿能力。
+            </p>
+            <p>
+              通过设置定时器，动态展示代码并绘制Winnie。
+            </p>
+            <p>
+              功能包括暂停、播放、快速、常速、慢速。
+            </p>
+            <p>支持手机端和PC端。</p>
+          </li>
+        </ul>
+      </section>
+      <section class="jobs">
+        <h2>工作经历</h2>
+        <header>
+          <h3>ZOL中关村在线北京总部</h3>
+          <h4>
+            数据开发(Python)
+          </h4>
+          <span>
+            <time>2019年6月</time>~
+            <time>2019年9月</time>
+          </span>
+        </header>
+
+        <p>独立负责训练GPT2-Chinese模型，生成有效的产品文字评论。</p>
+
+        <p>
+          负责训练BiLSTM-CRF模型识别新闻文章中商品名称，确保测试<strong
+            >准确率达到90%以上。</strong
+          >
+        </p>
+      </section>
+      <style>
+        p {
+          color: #666;
+        }
+      </style>
+      <section class="personal">
+        <h2>个人信息</h2>
+        <p>
+          英语水平：CET6
+        </p>
+        <p>
+          户籍地：山东省单县
+        </p>
+        <p>
+          论文成果：<br />
+          &nbsp; &nbsp;《满文单词罗马转写智能算法设计》大连民族大学学报<br />
+        </p>
+
+        <p>
+          &nbsp; &nbsp;《 Manchu Word Recognition Based on Convolutional Neural
+          Network with
+        </p>
+        <p>
+          Spatial Pyramid Pooling》2018 CISP-BMEI
+        </p>
+      </section>
+      <section class="others">
+        <h2>其他连接</h2>
+        <p>
+          <a href="https://www.yuque.com/u892375/ozqcnx">我的博客</a>，目前已有
+          15 篇关于前端学习的文章。
+        </p>
+
+        <p>
+          <a href="https://github.com/JonieFu/">我的 GitHub</a>，过去三个月有
+          185 次提交。
+        </p>
+      </section>
+    </article>
+    <script src="https://cdn.bootcdn.net/ajax/libs/echarts/4.6.0/echarts.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
