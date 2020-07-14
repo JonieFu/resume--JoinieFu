@@ -238,7 +238,7 @@
         <h1 class="">付玉</h1>
         <img src="images/photo.jpg" alt="付玉" height="105" />
         <p>
-          24岁 &nbsp;&nbsp;| &nbsp;&nbsp;前端开发工程师 &nbsp;&nbsp;|
+          23岁 &nbsp;&nbsp;| &nbsp;&nbsp;前端开发工程师 &nbsp;&nbsp;|
           &nbsp;&nbsp;北京 &nbsp;&nbsp;| &nbsp;&nbsp;硕士
         </p>
         <p>
@@ -261,7 +261,7 @@
           大连民族大学 电子信息技术 本科
         </p>
         <ul>
-          <li>荣誉：大连民族大学"优秀团干部"；大连民族大学"三好学生"</li>
+          <li>&nbsp;荣誉：大连民族大学"优秀团干部"；大连民族大学"三好学生"</li>
         </ul>
         <p>
           <span><time>2017年</time>~<time>2020年</time></span>
@@ -280,11 +280,13 @@
             <ul>
               <li>熟练掌握页面制作技巧，能将设计稿<strong>完美还原</strong></li>
               <li>
-                熟练掌握<strong>Javascript</strong>，掌握原型链、<strong>闭包</strong>、事件委托等重要概念
+                熟练掌握
+                <strong>Javascript</strong>
+                ，掌握原型链、<strong>闭包</strong>、事件委托等重要概念
               </li>
-              <li>熟练掌握<strong>Python</strong></li>
+              <li>熟练掌握 <strong>Python</strong></li>
               <li>
-                熟悉 <strong>Vue全家桶</strong>的使用，包括
+                熟悉 <strong>Vue全家桶</strong> 的使用，包括
                 VueCli、VueRouter、Vuex 等
               </li>
               <li>
@@ -292,11 +294,11 @@
                 AJAX、跨域、前端路由、Cookie、Session 等
               </li>
               <li>
-                熟悉<strong>React全家桶</strong>的使用，包括
+                熟悉 <strong>React全家桶</strong> 的使用，包括
                 create-react-app、ReactRouter、Redux 等
               </li>
               <li>熟悉 ES6语法，包括 let / Promsise / await / 析构赋值</li>
-              <li>熟悉<strong>Echarts</strong>图表库的使用</li>
+              <li>熟悉 <strong>Echarts</strong> 图表库的使用</li>
               <li>
                 了解 <strong>TypeScript</strong> 的使用，我的项目就是 TS 实现的
               </li>
@@ -315,7 +317,12 @@
           top: 0px;
           right: 11px;
         }
-        .projects ol li:nth-child(3) .img2 {
+        .projects ol li:nth-child(3) .img3 {
+          position: absolute;
+          top: 0px;
+          right: 11px;
+        }
+        .projects ol li:nth-child(4) .img2 {
           position: absolute;
           top: 0px;
           right: 11px;
@@ -334,16 +341,23 @@
               <a href="http://joniefu.gitee.io/complete-morney/">项目预览</a>
             </div>
             <p>
-              一款基于<strong>Vue</strong>、<strong>VueRouter</strong>、<strong>Vuex</strong>、<strong>TypeScript</strong>的单页面应用。
+              一款基于
+              <strong>Vue</strong
+              >、<strong>VueRouter</strong>、<strong>Vuex</strong>、<strong
+                >TypeScript</strong
+              >
+              的单页面应用。
             </p>
             <p>
-              源代码几乎全用TypeScript实现，用到了<strong>装饰器语法</strong>。
+              源代码几乎全用 TypeScript
+              实现，用到了<strong>装饰器语法</strong>。
             </p>
             <p>
               这是从我自己的需求出发，设计出的极简的记账应用，特点是快速记账。
             </p>
             <p>
-              难点在于本人独立设计及实现，期间遇到很多webpack和TypeScript方面的问题。
+              难点在于本人独立设计及实现，期间遇到很多 webpack 和 TypeScript
+              方面的问题。
             </p>
             <p>
               通过查阅资料和不断尝试解决了相关问题，并将解决方法记录在本人的博客。
@@ -356,7 +370,7 @@
               <a href="http://joniefu.gitee.io/canvas/">项目预览</a>
             </div>
             <p>
-              为了加深对<strong>Canvas API</strong>
+              为了加深对 <strong>Canvas API</strong>
               的理解，自己设计并完成了基于canvas的简易画板。
             </p>
             <p>
@@ -366,37 +380,53 @@
               难点在于当鼠标移动过快，浏览器无法跟上绘画速度产生间隙；画弧线时出现明显的锯齿。
             </p>
             <p>
-              lineTo绘制路径和lineJoin设置线段相连部分的属性，保证画笔快速移动时线条的连贯性。
+              lineTo 绘制路径和 lineJoin
+              设置线段相连部分的属性，保证画笔快速移动时线条的连贯性。
             </p>
           </li>
           <li>
+            <header class="page2"><h3>会动的维尼</h3></header>
+            <div class="img3"><img src="images/会动的Winnie.png" alt="" /></div>
+            <div class="click">
+              <a href="https://github.com/JonieFu/Winnie">Github源码链接</a>
+              <a href="https://joniefu.github.io/Winnie/src/">项目预览</a>
+            </div>
+            <p>
+              在学习了 CSS3 布局与定位、JS DOM 操作后，具备一定的网页模仿能力。
+            </p>
+            <p>
+              通过设置定时器，动态展示代码并绘制Winnie。
+            </p>
+            <p>
+              功能包括暂停、播放、快速、常速、慢速。
+            </p>
+            <p>支持手机端和 PC 端。</p>
+          </li>
+          <li>
             <div class="img2"><img src="images/前端导航.png" alt="" /></div>
-            <header class="page2"><h3>前端导航</h3></header>
+            <header><h3>前端导航</h3></header>
             <div class="click">
               <a href="https://github.com/JonieFu/nav/tree/master/src"
                 >Github源码链接</a
               >
               <a href="http://joniefu.gitee.io/nav/src/">项目预览</a>
             </div>
+            <p>这是一款基于 <strong>jQuery</strong> 的前端导航项目。</p>
             <p>
-              这是一款基于<strong>jQuery</strong>的前端导航项目。
+              使用
+              jQuery、<strong>JS</strong>、<strong>HTML</strong>、<strong>CSS</strong>、<strong
+                >SVG</strong
+              >
+              制作导航页面。
             </p>
-            <p>
-              使用jQuery、<strong>JS</strong>、<strong>HTML</strong>、<strong>CSS</strong>、<strong>SVG</strong>制作导航页面。
-            </p>
-            <p>用localStorage将数据保存到本地。</p>
-            <p>支持PC端和手机端，手机端长按已存标签删除。</p>
+            <p>用 localStorage 将数据保存到本地。</p>
+            <p>支持 PC 端和手机端，手机端长按已存标签删除。</p>
           </li>
         </ol>
       </section>
       <style>
         .openSource ul li {
           position: relative;
-        }
-        .openSource ul li:nth-child(2) .img3 {
-          position: absolute;
-          top: 0px;
-          right: 11px;
         }
       </style>
 
@@ -416,25 +446,29 @@
               实现了元素增、删、改、查等常见功能。
             </p>
           </li>
-          <li>
-            <header><h3>会动的维尼</h3></header>
-            <div class="img3"><img src="images/会动的Winnie.png" alt="" /></div>
-            <div class="click">
-              <a href="https://github.com/JonieFu/Winnie">Github源码链接</a>
-              <a href="https://joniefu.github.io/Winnie/src/">项目预览</a>
-            </div>
-            <p>
-              在学习了CSS3布局与定位、JS DOM操作后，具备一定的网页模仿能力。
-            </p>
-            <p>
-              通过设置定时器，动态展示代码并绘制Winnie。
-            </p>
-            <p>
-              功能包括暂停、播放、快速、常速、慢速。
-            </p>
-            <p>支持手机端和PC端。</p>
-          </li>
         </ul>
+      </section>
+      <style>
+        .others p > a {
+          border-bottom: none;
+        }
+      </style>
+      <section class="others">
+        <h2>技术博客</h2>
+        <a href="https://www.yuque.com/u892375/ozqcnx">博客地址</a>
+        <p>
+          <a href="https://www.yuque.com/u892375/ozqcnx/fsndv6"
+            >《封装DOM库》</a
+          >
+        </p>
+        <p>
+          <a href="https://www.yuque.com/u892375/ozqcnx/syq5et"
+            >《初始Webpack》</a
+          >
+        </p>
+        <p>
+          <a href="https://www.yuque.com/u892375/ozqcnx/em3dpn">《浅析MVC》</a>
+        </p>
       </section>
       <section class="jobs">
         <h2>工作经历</h2>
@@ -449,10 +483,10 @@
           </span>
         </header>
 
-        <p>独立负责训练GPT2-Chinese模型，生成有效的产品文字评论。</p>
+        <p>独立负责训练 GPT2-Chinese 模型，生成有效的产品文字评论。</p>
 
         <p>
-          负责训练BiLSTM-CRF模型识别新闻文章中商品名称，确保测试<strong
+          负责训练 BiLSTM-CRF 模型识别新闻文章中商品名称，确保测试<strong
             >准确率达到90%以上。</strong
           >
         </p>
@@ -468,31 +502,15 @@
           英语水平：CET6
         </p>
         <p>
-          户籍地：山东省单县
-        </p>
-        <p>
           论文成果：<br />
           &nbsp; &nbsp;《满文单词罗马转写智能算法设计》大连民族大学学报<br />
         </p>
-
         <p>
           &nbsp; &nbsp;《 Manchu Word Recognition Based on Convolutional Neural
           Network with
         </p>
         <p>
           Spatial Pyramid Pooling》2018 CISP-BMEI
-        </p>
-      </section>
-      <section class="others">
-        <h2>其他连接</h2>
-        <p>
-          <a href="https://www.yuque.com/u892375/ozqcnx">我的博客</a>，目前已有
-          15 篇关于前端学习的文章。
-        </p>
-
-        <p>
-          <a href="https://github.com/JonieFu/">我的 GitHub</a>，过去三个月有
-          185 次提交。
         </p>
       </section>
     </article>
